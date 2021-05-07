@@ -151,6 +151,8 @@ public class MyBlogServlet extends HttpServlet {
 		
 		System.out.println("Title: " + myblogvo.getBlogTitle());
 		System.out.println("Content: " + myblogvo.getBlogContent());
+		System.out.println("writer: " + myblogvo.getModifier());
+		
 		
 		try {
 			service.blogUpdate(myblogvo);
