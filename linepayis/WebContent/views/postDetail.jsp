@@ -65,7 +65,7 @@
 				<c:when test="${fn:length(blogDetail) > 0 }">
 						<c:forEach items="${blogDetail}" var="blogDetail" varStatus="rowcnt">
 							<section class="ftco-section contact-section">
-								<div class="container">
+								<div class="container" style ="margin-bottom :50px">
 								  <div class="row d-flex mb-5 contact-info">
 									<div class="col-md-12 mb-4">
 									  <h1 class="h1 font-weight-bold">${blogDetail.blogTitle }</h1>
@@ -78,9 +78,7 @@
 										${blogDetail.blogContent }
 									</div>
 								</div>
-								<p>
-								<div align="center" class="row d-flex mb-5 contact-info">
-						          <div class="w-100"></div>
+								<div align="center" class="row d-flex mb-5 contact-info" style="float: right">
 						          <div class="col-md-3">
 						            <a href="/linepayis/blogServlet?key=detail&update=Y&blogIdx=${blogDetail.blogIdx}">
 										<input class="btn" type="button" value="수정">
@@ -93,7 +91,6 @@
 						            <a href="/linepayis/blogServlet?key=list"><input class="btn" type="button" value="목록으로"></a>
 						          </div>
 						        </div>
-						        </p>
 							</section>
 						</c:forEach>
 					</c:when>
