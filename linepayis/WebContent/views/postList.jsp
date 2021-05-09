@@ -166,7 +166,9 @@
 	            <div class="ftco-footer-widget mb-4 ml-md-4">
 	              <h2 class="ftco-heading-2">Category</h2>
 	              <ul class="list-unstyled categories">
-	                <li><a href="#">Home</a></li>
+	               	<li><a href="/linepayis">Home</a></li>
+	                <li><a href="/linepayis/blogServlet?key=list">Post List</a></li>
+	                <li><a href="/linepayis/blogServlet?key=write">Upload Post</a></li>
 	              </ul>
 	            </div>
 	          </div>
